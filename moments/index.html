@@ -57,10 +57,11 @@ document.getElementById("menu-btn").addEventListener("click", () => {
   document.getElementById("mobile-menu").classList.toggle("hidden");
 });
     </script>
+<div id="imageViewer"></div>
 <h1 class="text-3xl font-bold m-30 mb-20">Moments</h1>
 <div class="relative"> 
-      <p id="timeline" class="w-1 absolute bg-red-500 h-10"></p>
-      <div id="moments" class="min-h-[70vh]"> </div>
+      <div id="timeline" class="w-1 bg-red-500 absolute h-full left-1/2 -translate-x-1/2"></div>
+      <div id="moments" class="min-h-[70vh] w-[80%] mx-auto"> </div>
     </div>
 <footer class="w-full bg-background-450 text-gray-300 py-10 px-6">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">

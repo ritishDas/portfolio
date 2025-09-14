@@ -223,6 +223,36 @@ projects: [
     tech: ["Node.js", "Express", "MongoDB", "JWT"]
   }
 ],
+moments: [
+    {
+      title: "First Hackathon Win",
+      date: "October 2021",
+      description: "Won the 'Best Innovative Idea' award at the Smart India Hackathon 2021 for creating a solution for waste management.",
+      photos: [
+        "portfolio_ui/Achievements.jpg",
+        "portfolio_ui/DevSphere - Home Page.jpg",
+        "portfolio_ui/Experience.jpg"
+      ]
+    },
+    {
+      title: "Trip to the Mountains",
+      date: "July 2022",
+      description: "A memorable trip to the Himalayas with friends. We trekked to the Kedarkantha peak and witnessed breathtaking views.",
+      photos: [
+        "portfolio_ui/Home.jpg",
+        "portfolio_ui/Moments.jpg",
+        "portfolio_ui/Projects.jpg"
+      ]
+    },
+    {
+      title: "Graduation Day",
+      date: "May 2023",
+      description: "Officially graduated with a Bachelor's degree in Computer Science and Engineering. A proud moment for me and my family.",
+      photos: [
+        "assets/profile.jpg"
+      ]
+    }
+  ],
   achievements: {
     certifications:[
 {
