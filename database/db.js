@@ -184,6 +184,69 @@ experience: {
       ]
     }
   ]
-}
-  
+},
+projects: [
+  {
+    title: "E-Commerce Platform",
+    img: "assets/profile.jpg",
+    description:
+      "A scalable e-commerce platform featuring user authentication, product catalog, cart & checkout system, order tracking, and secure payment integration.",
+    link: "https://ecom-ritish.vercel.app",
+    github: "https://github.com/ritishDas/e-commerce-platform",
+    tech: ["React", "Node.js", "Express", "MongoDB", "Stripe API", "JWT", "TailwindCSS"]
+  },
+  {
+    title: "Portfolio Website",
+    img: "assets/profile.jpg",
+    description:
+      "A personal portfolio website to showcase my projects, skills, and experience. Built with responsive design and deployed with CI/CD.",
+    link: "https://ritish.dev",
+    github: "https://github.com/ritishDas/portfolio",
+    tech: ["Next.js", "TailwindCSS", "Vercel"]
+  },
+  {
+    title: "Chat Application",
+    img: "assets/profile.jpg",
+    description:
+      "A real-time chat application with private rooms, typing indicators, and message history persistence using WebSockets.",
+    link: "https://chat-ritish.vercel.app",
+    github: "https://github.com/ritishDas/chat-app",
+    tech: ["React", "Node.js", "Socket.IO", "MongoDB"]
+  },
+  {
+    title: "Task Manager API",
+    img: "assets/profile.jpg",
+    description:
+      "A RESTful API for task management with CRUD operations, JWT authentication, and role-based access control.",
+    link: "https://taskapi-ritish.onrender.com",
+    github: "https://github.com/ritishDas/task-manager-api",
+    tech: ["Node.js", "Express", "MongoDB", "JWT"]
+  }
+],
+  achievements: {
+    certifications:[
+{
+title: "Certified AWS Solutions Architect – Associate",
+      issued: "Amazon Web Services (AWS) – JUNE 2023",
+      pics: ['assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg',],
+      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
+    }
+    ],
+    awards:[
+    {
+title: "Certified AWS Solutions Architect – Associate",
+      issued: "Amazon Web Services (AWS) – JUNE 2023",
+      pics: ['assets/profile.jpg','assets/arrow.svg','assets/email.svg','assets/github.svg','assets/logo.png',],
+      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
+    },
+    ],
+    courses:[
+    {
+title: "Certified AWS Solutions Architect – Associate",
+      issued: "Amazon Web Services (AWS) – JUNE 2023",
+      pics: ['assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg',],
+      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
+    }
+    ]
+  }
 };
