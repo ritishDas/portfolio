@@ -15,7 +15,7 @@ moments.forEach((moment, index) => {
   const image = gardener({
     t: 'img',
     attr: { src: `../${moment.photos[0]}` },
-    cn: ['w-full', 'md:w-1/2', 'rounded-lg', 'cursor-pointer', 'shadow-lg'],
+    cn: ['w-full', 'object-cover', 'md:w-1/2', 'rounded-lg', 'cursor-pointer', 'shadow-lg'],
     onclick: () => { imageViewer(moment.photos, 0) }
   });
 
