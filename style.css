@@ -7,6 +7,7 @@
     'Noto Color Emoji';
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
     monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
@@ -225,6 +226,9 @@
   .fixed {
     position: fixed;
   }
+  .relative {
+    position: relative;
+  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -294,9 +298,6 @@
   .m-30 {
     margin: calc(var(--spacing) * 30);
   }
-  .m-auto {
-    margin: auto;
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -363,14 +364,38 @@
   .h-52 {
     height: calc(var(--spacing) * 52);
   }
+  .h-\[65vh\] {
+    height: 65vh;
+  }
+  .h-\[70vh\] {
+    height: 70vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
+  }
+  .h-\[200vh\] {
+    height: 200vh;
+  }
+  .h-\[300vh\] {
+    height: 300vh;
+  }
+  .h-\[400vh\] {
+    height: 400vh;
+  }
   .h-screen {
     height: 100vh;
   }
   .max-h-\[80vh\] {
     max-height: 80vh;
   }
+  .min-h-\[70vh\] {
+    min-height: 70vh;
+  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -600,9 +625,6 @@
   .bg-gray-800 {
     background-color: var(--color-gray-800);
   }
-  .bg-green-700 {
-    background-color: var(--color-green-700);
-  }
   .bg-primary-400 {
     background-color: var(--color-primary-400);
   }
@@ -614,6 +636,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary-600) 30%, transparent);
     }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .bg-secondary-500 {
     background-color: var(--color-secondary-500);
