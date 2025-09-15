@@ -127,8 +127,7 @@ projects: [
     title: "Ritish Das Portfolio",
     img: "assets/profile.jpg",
     description:
-      "A personal portfolio website to showcase my projects, skills, and experience. Built with responsive design.
-",
+      "A personal portfolio website to showcase my projects, skills, and experience. Built with responsive design.",
     link: "https://ritish.site",
     github: "https://github.com/ritishDas/portfolio",
     tech: ["HTML", "CSS", "JS", "gardener (my library)"]
