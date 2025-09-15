@@ -10,7 +10,6 @@ skills: {
     "Vue.js",
     "Angular",
     "TailwindCSS",
-    "Bootstrap",
     "Redux / Zustand",
     "Webpack / Vite",
     "Responsive Design",
@@ -37,15 +36,13 @@ skills: {
   devops: [
     "Linux / Bash",
     "Git & GitHub / GitLab",
-    "CI/CD (GitHub Actions, GitLab CI, Jenkins)",
+    "CI/CD (GitHub Actions)",
     "Docker",
     "Kubernetes",
     "Nginx",
     "AWS (EC2, S3, RDS, Lambda)",
     "Azure",
     "Google Cloud Platform (GCP)",
-    "Terraform",
-    "Monitoring (Prometheus, Grafana)"
   ],
 
   testing: [
@@ -68,164 +65,86 @@ skills: {
 },
   featured:[
     {
-      title: "E-Commerce Platform",
-      img: "assets/profile.jpg",
+      title: "Ritish Das Portfolio",
+      img: "assets/portfolio.jpg",
       description: "A full-featured e-commerce platform with user authentication, product management, and payment integration.",
-      link: "ecom"
+      link: "https://github.com/ritishDas/portfolio"
     },
     {
-      title: "E-Commerce Platform",
-      img: "assets/profile.jpg",
-      description: "A full-featured e-commerce platform with user authentication, product management, and payment integration.",
-      link: "ecom"
-    },
-    {
-      title: "E-Commerce Platform",
-      img: "assets/profile.jpg",
-      description: "A full-featured e-commerce platform with user authentication, product management, and payment integration.",
-      link: "ecom"
-    },
-  ],
-experience: {
-  professional: [
-    {
-      company: "Tech Solutions Inc.",
-      role: "Full Stack Developer",
-      duration: "Jan 2020 – Present",
-      address: "Nagpur, India",
-      details: [
-        "Designed and implemented scalable web applications using React.js, Node.js, and Express.",
-        "Developed RESTful APIs and integrated third-party services to improve platform functionality.",
-        "Optimized SQL and NoSQL database queries (PostgreSQL, MongoDB) reducing response times by 30%.",
-        "Led migration from monolithic architecture to microservices, improving deployment cycles.",
-        "Mentored junior developers and conducted code reviews to maintain best practices."
-      ]
-    },
-    {
-      company: "InnovaTech Pvt. Ltd.",
-      role: "Software Engineer",
-      duration: "Jun 2017 – Dec 2019",
-      address: "Pune, India",
-      details: [
-        "Built interactive front-end components using Angular and integrated with backend APIs.",
-        "Automated CI/CD pipelines with Jenkins and Docker, reducing manual deployment effort.",
-        "Implemented JWT-based authentication and role-based access control for security.",
-        "Collaborated with product managers and UI/UX team to deliver customer-centric solutions.",
-        "Improved application performance by implementing server-side caching strategies."
-      ]
-    },
-    {
-      company: "WebWorks Ltd.",
-      role: "Junior Full Stack Developer",
-      duration: "Jan 2016 – May 2017",
-      address: "Bangalore, India",
-      details: [
-        "Assisted in building e-commerce platforms using PHP (Laravel) and MySQL.",
-        "Implemented responsive front-end designs with HTML5, CSS3, and jQuery.",
-        "Developed unit tests to improve code reliability and reduce production bugs.",
-        "Worked closely with senior engineers to debug and maintain legacy systems."
-      ]
-    },
-    {
-      company: "NextGen IT Services",
-      role: "Intern – Web Developer",
-      duration: "Jun 2015 – Dec 2015",
-      address: "Nagpur, India",
-      details: [
-        "Built small-scale internal tools using JavaScript and PHP.",
-        "Learned best practices in version control (Git) and Agile workflows.",
-        "Created basic dashboards for monitoring server logs and analytics."
-      ]
+      title: "Gardener",
+      img: "assets/gardener.jpg",
+      description: "A json based dom generator, uses recursion to generate a full dom tree of elements along with its styles and attributes, can be used in small projects where react is overkill.",
+      link: "https://github.com/ritishDas/gardener"
     }
   ],
+experience: {
+  professional: [],
   club: [
     {
-      company: "Developer Students Club (DSC) - Nagpur",
-      role: "Lead Developer",
-      duration: "Aug 2018 – May 2019",
+      company: "Picsel KDKCE",
+      role: "Website Head",
+      duration: "July 2025 – Present",
       address: "Nagpur, India",
       details: [
-        "Organized coding workshops and hackathons with 200+ participants.",
-        "Built a community website for event management and resource sharing using MERN stack.",
-        "Collaborated with peers on open-source projects and GitHub contributions."
+        "Leading our website team along with other leaders.",
+"Our team is responsible for the picsel website."
       ]
     },
     {
-      company: "Hack4Change",
-      role: "Open Source Contributor",
-      duration: "Jan 2018 – Present",
-      address: "Remote",
+      company: "Picsel KDKCE",
+      role: "Website Assistant",
+      duration: "Aug 2024 - April 2025",
+      address: "Nagpur",
       details: [
-        "Contributed to open-source projects focused on web accessibility and performance.",
-        "Developed reusable UI components and npm packages adopted by 1k+ developers.",
-        "Actively participated in code reviews and issue resolution in global projects."
+       "Was part of the main Website team",
+"Played active role in backend and deployment."
       ]
     },
     {
-      company: "CodeChef Nagpur Chapter",
-      role: "Core Team Member",
-      duration: "Aug 2017 – May 2018",
-      address: "Nagpur, India",
+      company: "Coding Club KDKCE",
+      role: "Joint Technical Head",
+      duration: "Aug 2024 – April 2025",
+      address: "Nagpur",
       details: [
-        "Conducted weekly coding sessions for 100+ students.",
+        "Conducted many events with our team with 300+ participants",
         "Organized inter-college programming contests and hackathons.",
         "Helped peers improve problem-solving and competitive programming skills."
       ]
     },
     {
-      company: "IEEE Student Branch",
-      role: "Technical Volunteer",
-      duration: "2016 – 2017",
+      company: "BIS Club KDKCE",
+      role: "Joint Technical Head",
+      duration: "Feb 2024 - April 2025",
       address: "Nagpur, India",
       details: [
-        "Contributed to setting up technical events and coding competitions.",
-        "Built a registration portal for events with automated email notifications.",
-        "Worked in a cross-disciplinary team to integrate hardware + software solutions."
+        "Contributed to setting up BIS events.",
       ]
     }
   ]
 },
 projects: [
   {
-    title: "E-Commerce Platform",
+    title: "Ritish Das Portfolio",
     img: "assets/profile.jpg",
     description:
-      "A scalable e-commerce platform featuring user authentication, product catalog, cart & checkout system, order tracking, and secure payment integration.",
-    link: "https://ecom-ritish.vercel.app",
-    github: "https://github.com/ritishDas/e-commerce-platform",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Stripe API", "JWT", "TailwindCSS"]
-  },
-  {
-    title: "Portfolio Website",
-    img: "assets/profile.jpg",
-    description:
-      "A personal portfolio website to showcase my projects, skills, and experience. Built with responsive design and deployed with CI/CD.",
-    link: "https://ritish.dev",
+      "A personal portfolio website to showcase my projects, skills, and experience. Built with responsive design.
+",
+    link: "https://ritish.site",
     github: "https://github.com/ritishDas/portfolio",
-    tech: ["Next.js", "TailwindCSS", "Vercel"]
+    tech: ["HTML", "CSS", "JS", "gardener (my library)"]
   },
   {
-    title: "Chat Application",
-    img: "assets/profile.jpg",
-    description:
-      "A real-time chat application with private rooms, typing indicators, and message history persistence using WebSockets.",
-    link: "https://chat-ritish.vercel.app",
-    github: "https://github.com/ritishDas/chat-app",
-    tech: ["React", "Node.js", "Socket.IO", "MongoDB"]
+    title: "Gardener",
+    img: "assets/gardener.jpg",
+    description:"A json based dom generator, uses recursion to generate a full dom tree of elements along with its styles and attributes, can be used in small projects where react is overkill.",
+    link: "",
+    github: "https://github.com/ritishDas/gardener",
+    tech: ["JS"]
   },
-  {
-    title: "Task Manager API",
-    img: "assets/profile.jpg",
-    description:
-      "A RESTful API for task management with CRUD operations, JWT authentication, and role-based access control.",
-    link: "https://taskapi-ritish.onrender.com",
-    github: "https://github.com/ritishDas/task-manager-api",
-    tech: ["Node.js", "Express", "MongoDB", "JWT"]
-  }
 ],
 moments: [
     {
-      title: "First Hackathon Win",
+      title: "First Hackathon",
       date: "October 2021",
       description: "Won the 'Best Innovative Idea' award at the Smart India Hackathon 2021 for creating a solution for waste management.",
       photos: [
