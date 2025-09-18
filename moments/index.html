@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title>
+    <title>My memorable moments</title>
     <link href="../style.css" rel="stylesheet">
-
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.png" />
+    <meta name="description" content="Ritish Das - Full-Stack Developer Portfolio. Showcasing projects, skills, and achievements in web development.">
     <script src="../gardener.js"> </script>
   </head>
   <body class="min-h-screen bg-background-50 text-text-900">
@@ -58,17 +59,33 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 });
     </script>
 <div id="imageViewer"></div>
-<h1 class="text-3xl font-bold m-30 mb-20">Moments</h1>
-<div class="relative"> 
-<ul>
-  <li onclick="momentGen(db.moments.fourth)">4th year</li>
-  <li onclick="momentGen(db.moments.third)">3rd year</li>
-  <li  onclick="momentGen(db.moments.second)">2nd year</li>
-  <li  onclick="momentGen(db.moments.first)">1st year</li>
-</ul>
-      <div id="timeline" class="w-1 bg-red-500 absolute h-30 left-1/2 -translate-x-1/2"></div>
-      <div id="moments"> </div>
-    </div>
+
+<h1 class="text-3xl font-bold my-8 text-center">Moments</h1>
+
+<div class="relative flex flex-col md:flex-row">
+  <!-- Year selector -->
+  <ul class="flex md:flex-col gap-4 md:gap-6 p-4 overflow-x-auto md:overflow-visible 
+             whitespace-nowrap text-lg font-medium text-gray-700">
+    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+        onclick="momentGen(db.moments.fourth)">4th year</li>
+    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+        onclick="momentGen(db.moments.third)">3rd year</li>
+    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+        onclick="momentGen(db.moments.second)">2nd year</li>
+    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
+        onclick="momentGen(db.moments.first)">1st year</li>
+  </ul>
+
+  <!-- Timeline container -->
+  <div class="relative flex-1 px-6 py-4">
+    <!-- Timeline line -->
+    <div id="timeline" class="absolute left-6 md:left-1/2 md:-translate-x-1/2 
+                            w-1 bg-red-500 h-full"></div>
+
+    <!-- Moments will be injected here -->
+    <div id="moments" class="relative space-y-8 md:space-y-12"></div>
+  </div>
+</div>
 <footer class="w-full bg-background-450 text-gray-300 py-10 px-6">
   <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
     

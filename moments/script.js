@@ -13,62 +13,78 @@ function momentGen(moments) {
   const parent = fetchElement('#moments');
   const newParent = gardener({
     t: 'div',
-    attr:{
-      id:'moments'
-    },
+    attr: { id: 'moments' },
     cn: ['min-h-[70vh]', 'w-[80%]', 'mx-auto']
-    
-  }  );
-    
-moments.forEach((moment, index) => {
-  const isEven = index % 2 === 0;
-
-  const image = gardener({
-    t: 'img',
-    attr: { src: `../${moment.photos[0]}` },
-    cn: ['w-full', 'object-cover', 'md:w-1/2', 'rounded-lg', 'cursor-pointer', 'shadow-lg'],
-    onclick: () => { imageViewer(moment.photos, 0) }
   });
 
-  const textContent = gardener({
-    t: 'div',
-    cn: ['w-full', 'md:w-1/2', 'p-8'],
-    children: [
-      {
-        t: 'h3',
-        cn: ['text-3xl', 'font-bold', 'mb-4'],
-        txt: moment.title
-      },
-      {
-        t: 'p',
-        cn: ['text-gray-400', 'mb-4'],
-        txt: moment.date
-      },
-      {
-        t: 'p',
-        cn: ['text-text-700', 'leading-relaxed'],
-        txt: moment.description
-      }
-    ]
+  moments.forEach((moment, index) => {
+    const isEven = index % 2 === 0;
+
+    // Image + "See more" wrapper
+    const imageWrapper = gardener({
+      t: 'div',
+      cn: ['w-full', 'md:w-1/2', 'flex', 'flex-col', 'items-center']
+    });
+
+    const image = gardener({
+      t: 'img',
+      attr: { src: `../${moment.photos[0]}` },
+      cn: ['w-full', 'object-cover', 'rounded-lg', 'cursor-pointer', 'shadow-lg'],
+      onclick: () => { imageViewer(moment.photos, 0) }
+    });
+
+    const seeMore = gardener({
+      t: 'span',
+      txt: 'See more',
+      cn: [
+        'mt-2', 'text-lg', 'bg-blue-500', 'cursor-pointer',
+        'hover:underline', 'transition', 'p-2', 'rounded-sm'
+      ],
+      onclick: () => { imageViewer(moment.photos, 0) }
+    });
+
+    appendElement(imageWrapper, image);
+    appendElement(imageWrapper, seeMore);
+
+    const textContent = gardener({
+      t: 'div',
+      cn: ['w-full', 'md:w-1/2', 'p-8'],
+      children: [
+        {
+          t: 'h3',
+          cn: ['text-3xl', 'font-bold', 'mb-4'],
+          txt: moment.title
+        },
+        {
+          t: 'p',
+          cn: ['text-gray-400', 'mb-4'],
+          txt: moment.date
+        },
+        {
+          t: 'p',
+          cn: ['text-text-700', 'leading-relaxed'],
+          txt: moment.description
+        }
+      ]
+    });
+
+    const momentCard = gardener({
+      t: 'div',
+      cn: ['flex', 'flex-col', 'md:flex-row', 'items-center', 'my-20', 'gap-8']
+    });
+
+    if (isEven) {
+      appendElement(momentCard, imageWrapper);
+      appendElement(momentCard, textContent);
+    } else {
+      appendElement(momentCard, textContent);
+      appendElement(momentCard, imageWrapper);
+    }
+
+    appendElement(newParent, momentCard);
   });
 
-  const momentCard = gardener({
-    t: 'div',
-    cn: ['flex', 'flex-col', 'md:flex-row', 'items-center', 'my-20', 'gap-8'],
-  });
-
-  if(isEven) {
-  appendElement(momentCard, image);
-  appendElement(momentCard, textContent);
-  }
-  else{
-  appendElement(momentCard, textContent);
-  appendElement(momentCard, image);
-  }
-
-  appendElement(newParent, momentCard);
-});
-replaceElement(parent, newParent)
+  replaceElement(parent, newParent);
 }
 
 
