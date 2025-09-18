@@ -1,14 +1,25 @@
-const parent = fetchElement('#moments');
+
 const timeline = fetchElement('#timeline');
 
 document.addEventListener('scroll', () => {
   const scrollPos = window.scrollY; // current scroll offset from top
-  console.log('Scroll position:', scrollPos);
+  
   timeline.style.height = `${scrollPos + 100}px`;
 });
 
-const moments = db.moments;
+//const moments = db.moments;
 
+function momentGen(moments) {
+  const parent = fetchElement('#moments');
+  const newParent = gardener({
+    t: 'div',
+    attr:{
+      id:'moments'
+    },
+    cn: ['min-h-[70vh]', 'w-[80%]', 'mx-auto']
+    
+  }  );
+    
 moments.forEach((moment, index) => {
   const isEven = index % 2 === 0;
 
@@ -55,8 +66,12 @@ moments.forEach((moment, index) => {
   appendElement(momentCard, image);
   }
 
-  appendElement(parent, momentCard);
+  appendElement(newParent, momentCard);
 });
+replaceElement(parent, newParent)
+}
+
+
 
 function imageViewer(images, imagesliderindex) {
   const parentView = fetchElement('#imageViewer');
@@ -72,8 +87,10 @@ function imageViewer(images, imagesliderindex) {
       "z-50"         // ensure it's on top
     ]
   });
+let imageElement;
 
-  const imageElement = gardener({
+if(typeof(images[imagesliderindex])==='string') {
+  imageElement = gardener({
     t: "img",
     attr: {
       src: `../${images[imagesliderindex]}`,
@@ -81,6 +98,27 @@ function imageViewer(images, imagesliderindex) {
     },
     cn: ["max-h-[80vh]", "max-w-[90vw]", "rounded-2xl", "shadow-xl", "transition", "duration-300"]
   });
+}
+else{
+  imageElement = gardener({
+    t:'div',
+    children:[
+      {
+        t:'span',
+        txt:images[imagesliderindex].txt
+      },
+      {
+    t: "img",
+    attr: {
+      src: `../${images[imagesliderindex].img}`,
+      alt: images[imagesliderindex].img
+    },
+    
+    cn: ["max-h-[80vh]", "max-w-[90vw]", "rounded-2xl", "shadow-xl", "transition", "duration-300"]
+  }
+    ]
+  });
+}
 
   const prevButton = gardener({
     t: "button",
