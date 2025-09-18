@@ -10,7 +10,7 @@ const awardDiv = gardener({t:'div',
 database.forEach(award => {
 appendElement(awardDiv, gardener({
     t:'div',
-    cn:['m-2', 'px-4', 'border', 'rounded-md', 'w-100'],
+    cn:['flex', 'flex-col', 'justify-between', 'm-4', 'p-4', 'border', 'rounded-md', 'w-100'],
     children:[
       {
         t:'h3',
