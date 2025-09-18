@@ -143,58 +143,73 @@ projects: [
 ],
 moments: [
     {
-      title: "First Hackathon",
-      date: "October 2021",
-      description: "Won the 'Best Innovative Idea' award at the Smart India Hackathon 2021 for creating a solution for waste management.",
+      title: "End Of Third Year ",
+      date: "April 2025",
+      description: "This year was a blast took part in a lot of activities and learned a lot",
       photos: [
-        "portfolio_ui/Achievements.jpg",
-        "portfolio_ui/DevSphere - Home Page.jpg",
-        "portfolio_ui/Experience.jpg"
+        "assets/moments/badges.jpg",
       ]
     },
     {
-      title: "Trip to the Mountains",
-      date: "July 2022",
-      description: "A memorable trip to the Himalayas with friends. We trekked to the Kedarkantha peak and witnessed breathtaking views.",
+      title: "Nirvana 2025",
+      date: "January 2025",
+      description: "Our Annual College Event.",
       photos: [
-        "portfolio_ui/Home.jpg",
-        "portfolio_ui/Moments.jpg",
-        "portfolio_ui/Projects.jpg"
+        "assets/moments/nirvana.jpg",
       ]
     },
     {
-      title: "Graduation Day",
-      date: "May 2023",
-      description: "Officially graduated with a Bachelor's degree in Computer Science and Engineering. A proud moment for me and my family.",
+      title: "Hack On, Government CE, Nagpur",
+      date: "January 2025",
+      description: "Participated in Hack On 8 hour hackathon in Government CE, Nagpur",
       photos: [
-        "assets/profile.jpg"
+        "assets/moments/gce.jpg",
+      ]
+    },
+     {
+      title: "Central India Hackathon, Suryodaya CE, Nagpur",
+      date: "January 2025",
+      description: "Participated in the Central India 12 hr Hackathon in Suryodaya CE, though we didn't win but we learned a lot and enjoyed our first hackathon.",
+      photos: [
+        "assets/moments/cih.jpg",
       ]
     }
+    
   ],
   achievements: {
-    certifications:[
-{
-title: "Certified AWS Solutions Architect – Associate",
-      issued: "Amazon Web Services (AWS) – JUNE 2023",
-      pics: ['assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg',],
-      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
-    }
-    ],
+    certifications:[ ],
     awards:[
     {
-title: "Certified AWS Solutions Architect – Associate",
-      issued: "Amazon Web Services (AWS) – JUNE 2023",
-      pics: ['assets/profile.jpg','assets/arrow.svg','assets/email.svg','assets/github.svg','assets/logo.png',],
-      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
+title: "1st prize in Code Combat",
+      issued: "GH Raisoni Institute Of Engineering, Nagpur - 2024", 
+      pics: ['assets/moments/codecombat.jpg'],
+      description: "This was a problem solving competition in which we were given some tasks and problems to solve. We were given an hour to code in our preferred language and results were declared on the basis of speed, accuracy and code quality."
+    },
+     {
+title: "1st prize in Techsphere",
+      issued: "KDK College Of Engineering- 2024", 
+      pics: ['assets/certs/Techsphere.jpg'],
+      description: "This was a three round competition 1st was a technical quiz, second was code debugging, and the last round was a technical interview."
+    },
+    {
+title: "3rd prize in Spark 2025",
+      issued: "KDK College Of Engineering - 2025", 
+      pics: ['assets/certs/spark25.jpg'],
+      description: "This is a paper presentation competition in which our group presented a paper on title AI powered Collegiate Interactive Support System."
+    },
+    {
+    title: "2nd prize in CodeFiesta",
+      issued: "KDK College Of Engineering - 2023", 
+      pics: ['assets/certs/CodeFiesta.jpg'],
+      description: "This was a 3 round competition. 1st round was a quiz, 2nd was pseudocode round, 3rd was a problem solving round in which we were given a problem to solve. We were given limited time to code in our preferred language and results were declared on the basis of speed, accuracy and code quality. "
+    },
+      {
+    title: "3rd prize in Spectra",
+      issued: "KDK College Of Engineering - 2023", 
+      pics: ['assets/certs/spectra.jpg'],
+      description: "This was a debugging Competition in which we were given some code snippets and we need to debug it in limited time."
     },
     ],
-    courses:[
-    {
-title: "Certified AWS Solutions Architect – Associate",
-      issued: "Amazon Web Services (AWS) – JUNE 2023",
-      pics: ['assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg','assets/profile.jpg',],
-      description: "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS."
-    }
-    ]
+    courses:[   ]
   }
 };
