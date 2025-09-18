@@ -213,3 +213,4 @@ function imageViewer(images, imagesliderindex) {
   }
 }
 
+momentGen(db.moments.first)
