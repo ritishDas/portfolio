@@ -64,16 +64,8 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 
 <div class="relative flex flex-col md:flex-row">
   <!-- Year selector -->
-  <ul class="flex md:flex-col gap-4 md:gap-6 p-4 overflow-x-auto md:overflow-visible 
+  <ul id="yearbtn" class="flex md:flex-col gap-4 md:gap-6 p-4 fixed z-20 overflow-x-auto md:overflow-visible 
              whitespace-nowrap text-lg font-medium text-gray-700">
-    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
-        onclick="momentGen(db.moments.fourth)">4th year</li>
-    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
-        onclick="momentGen(db.moments.third)">3rd year</li>
-    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
-        onclick="momentGen(db.moments.second)">2nd year</li>
-    <li class="cursor-pointer px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 transition"
-        onclick="momentGen(db.moments.first)">1st year</li>
   </ul>
 
   <!-- Timeline container -->

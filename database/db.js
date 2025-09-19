@@ -141,8 +141,8 @@ projects: [
     tech: ["JS"]
   },
 ],
-moments: {
-  first:[
+moments: [
+  [
       {
       title: "Start Of College🎓🎓",
       date: "Nov 2022",
@@ -188,7 +188,7 @@ moments: {
     },
     
   ],
-  second:[
+  [
      {
       title: "2nd in Code Fiesta🥳🥳 ",
       date: "June 2023",
@@ -268,7 +268,7 @@ moments: {
     },
     
   ],
-  third:[
+  [
      {
       title: "Git/GitHub Tutorial",
       date: "January 2025",
@@ -327,7 +327,7 @@ moments: {
     },
     
   ],
-  fourth:[
+  [
     {
       title: "Final Year Welcome Back Lapy 🥹",
       date: "Aug 2025",
@@ -338,7 +338,7 @@ moments: {
       ]
     }
   ]
-  },
+  ],
   achievements: {
     certifications:[ ],
     awards:[

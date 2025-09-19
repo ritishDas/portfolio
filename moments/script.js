@@ -9,8 +9,27 @@ document.addEventListener('scroll', () => {
 
 //const moments = db.moments;
 
-function momentGen(moments) {
+function momentGen(moments, index) {
   const parent = fetchElement('#moments');
+  const yearbtn = fetchElement('#yearbtn');
+  const newYearbtn = gardener({
+    t:'ul',
+    attr: { id: 'yearbtn' },
+    cn: ['flex', 'md:flex-col', 'gap-4', 'md:gap-6', 'p-4', 'fixed', 'z-20', 'overflow-x-auto', 'md:overflow-visible', 
+         'whitespace-nowrap', 'text-lg', 'font-medium', 'text-gray-700']
+  });
+
+  for(let i = 0; i<4; i++) {
+    appendElement(newYearbtn, gardener({
+      t:'li',
+      txt: `Year ${i + 1}`,
+      onclick: () => { momentGen(db.moments[i], i) },
+      cn: ['cursor-pointer', 'px-4', 'py-2', 'bg-gray-100', 'rounded-lg', 'hover:bg-gray-200', 'transition'],
+      attr: { style: (i === index ? 'background:red;' : '') }
+    }));
+  }
+
+  replaceElement(yearbtn, newYearbtn);
   const newParent = gardener({
     t: 'div',
     attr: { id: 'moments' },
@@ -213,4 +232,4 @@ function imageViewer(images, imagesliderindex) {
   }
 }
 
-momentGen(db.moments.first)
+momentGen(db.moments[0], 0);
