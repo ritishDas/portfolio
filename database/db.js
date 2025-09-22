@@ -275,7 +275,7 @@ moments: [
       description: "This was a hands on session on git/GitHub with juniors",
       photos: [
         "assets/3rdyr/gitwork3.jpg",
-         "assets/3rdyr/gitwork1.jpg",
+         "assets/3rdyr/gitwork.jpg",
           "assets/3rdyr/gitwork2.jpg",
            "assets/3rdyr/gitwork4.jpg",
             "assets/3rdyr/gitwork5.jpg",
@@ -308,7 +308,7 @@ moments: [
       ]
     },
        {
-      title: "Hackenger ",
+      title: "Hackathonix ",
       date: "April 2025",
       description: "Coding club kdkce presents hackenger, allergic to camera even cameraman hates me ",
       photos: [
