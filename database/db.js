@@ -1,14 +1,12 @@
 const db = {
 skills: {
-  frontend: [
+  Frontend: [
     "HTML",
     "CSS",
     "JavaScript",
     "TypeScript",
     "React",
     "Next.js",
-    "Vue.js",
-    "Angular",
     "TailwindCSS",
     "Redux / Zustand",
     "Webpack / Vite",
@@ -16,7 +14,7 @@ skills: {
     "Accessibility (a11y)"
   ],
 
-  backend: [
+  Backend: [
     "Node.js",
     "Express",
     "NestJS",
@@ -26,41 +24,41 @@ skills: {
     "PostgreSQL",
     "MySQL",
     "SQLite",
-    "Redis",
+   // "Redis",
     "Prisma / Sequelize / TypeORM",
     "Authentication (JWT, OAuth)",
     "Microservices",
     "WebSockets"
   ],
 
-  devops: [
+  Devops: [
     "Linux / Bash",
     "Git & GitHub / GitLab",
-    "CI/CD (GitHub Actions)",
+  //  "CI/CD (GitHub Actions)",
     "Docker",
-    "Kubernetes",
+ //   "Kubernetes",
     "Nginx",
     "AWS (EC2, S3, RDS, Lambda)",
-    "Azure",
+ //   "Azure",
     "Google Cloud Platform (GCP)",
   ],
 
-  testing: [
+  Testing: [
     "Jest",
-    "Mocha / Chai",
-    "React Testing Library",
-    "Cypress",
-    "Playwright",
+   // "Mocha / Chai",
+   // "React Testing Library",
+  //  "Cypress",
+   // "Playwright",
     "Postman / Newman"
   ],
 
-  others: [
-    "Agile / Scrum",
+  Others: [
+   // "Agile / Scrum",
     "System Design",
     "Design Patterns",
     "Problem Solving / DSA",
-    "API Documentation (Swagger, OpenAPI)",
-    "Security Best Practices (OWASP)"
+   // "API Documentation (Swagger, OpenAPI)",
+   // "Security Best Practices (OWASP)"
   ]
 },
   featured:[
