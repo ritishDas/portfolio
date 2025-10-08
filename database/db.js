@@ -62,6 +62,12 @@ skills: {
   ]
 },
   featured:[
+      {
+    title: "Astm",
+    img: "assets/astm.jpg",
+    description:"An asset manager that saves assets like web components, code snippets, icons etc locally on your machine while also maintaining a backup on github.",
+    link: "https://github.com/ritishDas/astm",
+     },
     {
       title: "Ritish Das Portfolio",
       img: "assets/profile.jpg",
@@ -138,6 +144,14 @@ projects: [
     github: "https://github.com/ritishDas/gardener",
     tech: ["JS"]
   },
+  {
+    title: "Astm",
+    img: "assets/astm.jpg",
+    description:"An asset manager that saves assets like web components, code snippets, icons etc locally on your machine while also maintaining a backup on github.",
+    link: "",
+    github: "https://github.com/ritishDas/astm",
+    tech: ["C++"]
+  }
 ],
 moments: [
   [
