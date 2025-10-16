@@ -348,6 +348,17 @@ moments: [
         "assets/4thyr/pic1.jpg",
          "assets/4thyr/pic2.jpg",
       ]
+    },
+{
+      title: "Rohan's Birthday",
+      date: "Oct 2025",
+      description: "Today is major project review and guess what it's also Rohan's Birthday 🎉",
+      photos: [
+        "assets/4thyr/rohan.jpg",
+         "assets/4thyr/rohan2.jpg",
+"assets/4thyr/rohan3.jpg",
+"assets/4thyr/rohan4.jpg"
+      ]
     }
   ]
   ],
