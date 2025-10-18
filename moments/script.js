@@ -15,7 +15,7 @@ function momentGen(moments, index) {
   const newYearbtn = gardener({
     t:'ul',
     attr: { id: 'yearbtn' },
-    cn: ['flex', 'md:flex-col', 'gap-4', 'md:gap-6', 'p-4', 'fixed', 'z-20', 'overflow-x-auto', 'md:overflow-visible', 
+    cn: ['flex', 'w-full', 'md:flex-col', 'gap-4', 'md:gap-6', 'p-4', 'fixed', 'z-20', 'overflow-x-auto', 'md:overflow-visible', 
          'whitespace-nowrap', 'text-lg', 'font-medium', 'text-gray-700']
   });
 
