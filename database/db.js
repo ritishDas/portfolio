@@ -8,43 +8,35 @@ skills: {
     "React",
     "Next.js",
     "TailwindCSS",
-    "Redux / Zustand",
-    "Webpack / Vite",
+    "Zustand",
+    "Vite",
     "Responsive Design",
-    "Accessibility (a11y)"
   ],
 
   Backend: [
     "Node.js",
     "Express",
-    "NestJS",
     "GraphQL",
     "REST APIs",
     "MongoDB",
     "PostgreSQL",
-    "MySQL",
-    "SQLite",
-   // "Redis",
-    "Prisma / Sequelize / TypeORM",
+    "Prisma",
     "Authentication (JWT, OAuth)",
-    "Microservices",
     "WebSockets"
   ],
 
   Devops: [
     "Linux / Bash",
-    "Git & GitHub / GitLab",
-  //  "CI/CD (GitHub Actions)",
-    "Docker",
+    "Git & GitHub",
+  //  "Docker",
  //   "Kubernetes",
-    "Nginx",
-    "AWS (EC2, S3, RDS, Lambda)",
+  //  "Nginx",
+  
  //   "Azure",
     "Google Cloud Platform (GCP)",
   ],
 
   Testing: [
-    "Jest",
    // "Mocha / Chai",
    // "React Testing Library",
   //  "Cypress",
