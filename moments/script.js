@@ -1,4 +1,20 @@
+const allImages = [];
+const database = db.moments;
+//console.log(database[0]);
+database.forEach(entry => {
+  entry.forEach(event=>{
+      event.photos.forEach(pic=>{
+        if(typeof(pic)==='string')
+        allImages.push(pic)
+        else {
+          allImages.push(pic.img)
+        }
+      })
+    })
+})
 
+//console.log(allImages);
+imagePreloader(allImages)
 const timeline = fetchElement('#timeline');
 
 document.addEventListener('scroll', () => {

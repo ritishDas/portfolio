@@ -1,8 +1,12 @@
 const achievements = fetchElement('#achievements');
 
 const database = db.achievements.awards;
-
-
+const allimages=[];
+database.forEach(entry=>{
+  entry.pics.forEach(pic=>{allimages.push(pic)})
+})
+console.log(allimages)
+imagePreloader(allimages);
 const awardDiv = gardener({t:'div',
   cn:[ 'flex', 'justify-center', 'flex-wrap']
 });
